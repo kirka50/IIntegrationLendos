@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="whois">
-    <h1 class="whois__title">
+    <h1>
       Кто мы ?
     </h1>
     <div class="whois__text-block">
@@ -26,7 +26,21 @@
           Участвуем в соревнованиях и хакатонах. Мы нацелены на внедрение нейронных сетей в повседневную жизнь человека,
           делая наши продукты удобными и рентабельными среди пользователей.
         </p>
-
+        <div class="text-block__text--downed">
+          <p>
+            Каждый из нас разбирается в том что делает
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="whois__about-us">
+      <div class="about-us__text">
+        Мы появились ещё будучи студентами
+        <p>Первым нашим делом было внедрение IoT в лаборатории учебного заведения</p>
+        <p>Затем пошли разные соревнования и хакатоны</p>
+      </div>
+      <div class="about-us__image">
+        <img src="/teamHackEkb.png" width="680px">
       </div>
     </div>
   </div>
@@ -95,9 +109,8 @@ export default {
     font-size: 128px;
 
   }
-  .whois__title{
-  }
   .whois__text-block{
+    overflow: hidden;
     display: flex;
     gap: 10%;
     .text-block__graphics{
@@ -108,7 +121,10 @@ export default {
     }
     .text-block__text{
       padding-top:0;
-
+      word-wrap: break-word;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       h2 {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
@@ -123,6 +139,35 @@ export default {
         font-size: 32px;
         text-align: justify;
 
+      }
+      .text-block__text--downed {
+        display: flex;
+        align-content: end;
+        p{
+          color: #00A8F0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .whois__about-us {
+    margin-top: 100px ;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    .about-us__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: "Roboto", sans-serif;
+      font-size: 36px;
+      font-weight: 300;
+      color: #FCFEFF;
+      max-width: 30vw;
+    }
+    .about-us__image {
+      img{
+        border-radius: 20px;
       }
     }
   }
