@@ -40,12 +40,15 @@
         <p>Затем пошли разные соревнования и хакатоны</p>
       </div>
       <div class="about-us__image">
-        <img src="/teamHackEkb.png" width="680px">
+        <img src="/teamHackEkb.png">
       </div>
     </div>
   </div>
   <div class="what-we-do">
-    Контунт тут
+    <h1>
+      Что мы делаем ? <br>
+      ААААА РОМА ЕБЛАН
+    </h1>
   </div>
 </template>
 
@@ -74,7 +77,6 @@ export default {
   .team-title__team-image {
     .team-image__img {
       position: relative;
-
       img {
         max-width: 100%;
       }
@@ -100,7 +102,9 @@ export default {
   @include borders;
   font-weight: bold;
   background-color: #38465B;
+  //border-radius: 0 0 20px 20px;
   padding-top: 100px;
+  padding-bottom: 30px;
   h1{
     font-family: "Roboto", sans-serif;
     color: #FCFEFF;
@@ -142,7 +146,7 @@ export default {
       }
       .text-block__text--downed {
         display: flex;
-        align-content: end;
+        align-content: flex-end;
         p{
           color: #00A8F0;
           cursor: pointer;
@@ -166,10 +170,30 @@ export default {
       max-width: 30vw;
     }
     .about-us__image {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+      width: 90%;
       img{
         border-radius: 20px;
+        height: auto;
+        width: 90%;
       }
     }
+  }
+}
+.what-we-do {
+  @include borders;
+  margin-top: -20px;
+  border-radius: 20px;
+  border: solid 20px #FCFEFF;
+  color: #434244;
+  h1 {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
   }
 }
 </style>
