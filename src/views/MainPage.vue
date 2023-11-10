@@ -35,20 +35,56 @@
     </div>
     <div class="whois__about-us">
       <div class="about-us__text">
-        Мы появились ещё будучи студентами
-        <p>Первым нашим делом было внедрение IoT в лаборатории учебного заведения</p>
-        <p>Затем пошли разные соревнования и хакатоны</p>
+        <div>
+          Мы появились ещё будучи студентами
+        </div>
+        <div>
+          <p>Первым нашим делом было внедрение IoT в лаборатории учебного заведения</p>
+        </div>
+        <div>
+          <p>Затем пошли разные соревнования и хакатоны</p>
+        </div>
+
+
       </div>
       <div class="about-us__image">
-        <img src="/teamHackEkb.png">
+        <img src="/teamHackEkb.png" alt="Наша крутая картинка">
       </div>
     </div>
   </div>
   <div class="what-we-do">
     <h1>
-      Что мы делаем ? <br>
-      ААААА РОМА ЕБЛАН
+      Что мы делаем ?
     </h1>
+    <div class="what-we-do__blocks">
+      <div class="blocks__hacks">
+        <div class="blocks__hacks__page">
+          <img src="/teamHackEkb.png" class="hacks__page__img">
+          <div class="hacks__page__title">
+            Подпись
+          </div>
+        </div>
+        <div class="blocks__hacks__block-text">
+          Текст под картинкой
+        </div>
+      </div>
+      <div class="blocks__projects">
+        <div class="blocks__projects__page">
+          2
+        </div>
+        <div class="blocks__projects__block-text">
+          3
+        </div>
+      </div>
+      <div class="blocks__other">
+        <div class="blocks__other__page">
+          2
+        </div>
+        <div class="blocks__other__block-text">
+          3
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -67,6 +103,7 @@ export default {
 @mixin borders {
   padding-left: 10%;
   padding-right: 10%;
+  min-width: 1280px;
 }
 
 .team-title {
@@ -75,10 +112,14 @@ export default {
   justify-content: center;
 
   .team-title__team-image {
+    min-width: 1280px;
+
     .team-image__img {
       position: relative;
+
       img {
         max-width: 100%;
+
       }
 
       .img__ico {
@@ -104,8 +145,9 @@ export default {
   background-color: #38465B;
   //border-radius: 0 0 20px 20px;
   padding-top: 100px;
-  padding-bottom: 30px;
-  h1{
+  padding-bottom: 10%;
+
+  h1 {
     font-family: "Roboto", sans-serif;
     color: #FCFEFF;
     font-weight: 300;
@@ -113,87 +155,144 @@ export default {
     font-size: 128px;
 
   }
-  .whois__text-block{
+
+  .whois__text-block {
     overflow: hidden;
     display: flex;
     gap: 10%;
-    .text-block__graphics{
+
+    .text-block__graphics {
       background-color: gray;
       height: 500px;
       min-width: 200px;
       border-radius: 20px;
     }
-    .text-block__text{
-      padding-top:0;
+
+    .text-block__text {
+      padding-top: 0;
       word-wrap: break-word;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+
       h2 {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 3em;
         color: #FCFEFF;
       }
+
       p {
         color: #FCFEFF;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
 
         font-size: 32px;
-        text-align: justify;
+        text-align: left;
 
       }
+
       .text-block__text--downed {
         display: flex;
         align-content: flex-end;
-        p{
+
+        p {
           color: #00A8F0;
           cursor: pointer;
         }
       }
     }
   }
+
   .whois__about-us {
-    margin-top: 100px ;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    gap: 10px;
+
     .about-us__text {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       font-family: "Roboto", sans-serif;
       font-size: 36px;
       font-weight: 300;
       color: #FCFEFF;
       max-width: 30vw;
+      min-width: 50%;
     }
-    .about-us__image {
-      display: flex;
-      align-content: center;
-      justify-content: center;
 
-      width: 90%;
-      img{
+    .about-us__image {
+      img {
         border-radius: 20px;
         height: auto;
-        width: 90%;
+        width: 100%;
       }
     }
   }
 }
+
 .what-we-do {
+  @mixin block-pos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @include borders;
   margin-top: -20px;
   border-radius: 20px;
   border: solid 20px #FCFEFF;
   color: #434244;
+  padding-top: 50px;
+
   h1 {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 64px;
     font-weight: 500;
   }
+  .what-we-do__blocks {
+    @mixin block-page(){
+      background-color: #38465B;
+      width: 384px;
+      height: 374px;
+      border-radius: 30px;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: row;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .blocks__hacks{
+      @include block-pos;
+      .blocks__hacks__page {
+        @include block-page;
+        display: flex;
+        .hacks__page__img {
+          width: 100%;
+          height: 100%;
+          position: relative;
+        }
+        .hacks__page__title {
+          position: absolute;
+          color: #FCFEFF;
+          font-size: 32px;
+        }
+      }
+    }
+    .blocks__projects{
+      .blocks__projects__page{
+        @include block-page();
+      }
+    }
+    .blocks__other{
+      .blocks__other__page{
+        @include block-page();
+      }
+    }
+  }
+
 }
 </style>
