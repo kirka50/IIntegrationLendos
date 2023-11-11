@@ -59,29 +59,46 @@
     <div class="what-we-do__blocks">
       <div class="blocks__hacks">
         <div class="blocks__hacks__page">
-          <img src="/teamHackEkb.png" class="hacks__page__img">
-          <div class="hacks__page__title">
-            Подпись
+          <img src="/teamHackEkb.png" class="page__img">
+          <div class="page__title">
+            Хакатоны
           </div>
         </div>
-        <div class="blocks__hacks__block-text">
-          Текст под картинкой
+        <div class="block__under-list">
+          <ul>
+            <li>TopBlog</li>
+            <li>В поисках Кита</li>
+            <li>SkyHack</li>
+            <li>Полюс Хакатон</li>
+          </ul>
         </div>
       </div>
       <div class="blocks__projects">
         <div class="blocks__projects__page">
-          2
+          <img src="/teamHackEkb.png" class="page__img">
+          <div class="page__title">
+            Проекты
+          </div>
         </div>
-        <div class="blocks__projects__block-text">
-          3
+        <div class="block__under-list">
+          <ul>
+            <li>SmartLab</li>
+            <li>SmartInvent</li>
+          </ul>
         </div>
       </div>
       <div class="blocks__other">
         <div class="blocks__other__page">
-          2
+          <img src="/teamHackEkb.png" class="page__img">
+          <div class="page__title">
+            Прочее
+          </div>
         </div>
-        <div class="blocks__other__block-text">
-          3
+        <div class="block__under-list">
+          <ul>
+            <li>Что сюда впендюрить</li>
+            <li>Спросить у Кирилла</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -252,9 +269,12 @@ export default {
     font-size: 64px;
     font-weight: 500;
   }
+
   .what-we-do__blocks {
-    @mixin block-page(){
+    margin-top: 15vh;
+    @mixin block-page() {
       background-color: #38465B;
+      display: flex;
       width: 384px;
       height: 374px;
       border-radius: 30px;
@@ -265,16 +285,18 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .blocks__hacks{
-      @include block-pos;
+
+    .blocks__hacks {
+
       .blocks__hacks__page {
         @include block-page;
-        display: flex;
+
         .hacks__page__img {
           width: 100%;
           height: 100%;
           position: relative;
         }
+
         .hacks__page__title {
           position: absolute;
           color: #FCFEFF;
@@ -282,15 +304,39 @@ export default {
         }
       }
     }
-    .blocks__projects{
-      .blocks__projects__page{
+
+    .blocks__projects {
+      .blocks__projects__page {
         @include block-page();
       }
     }
-    .blocks__other{
-      .blocks__other__page{
+
+    .blocks__other {
+      .blocks__other__page {
         @include block-page();
       }
+    }
+
+    .page__img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .page__title {
+      position: absolute;
+      color: #FCFEFF;
+      font-size: 32px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .block__under-list {
+      display: flex;
+      align-items: flex-start;
+      color: #434244;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
     }
   }
 
