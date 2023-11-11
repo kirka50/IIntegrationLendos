@@ -102,6 +102,27 @@
         </div>
       </div>
     </div>
+    <div class="what-we-do__future-block">
+      <div class="future-block">
+        <div class="future-block__title">
+          Наше будущее
+        </div>
+        <div class="future-block__text">
+          <div>
+            <h1>Покорение хакатонов</h1>
+            <p>Повысить свой уровень до международных</p>
+          </div>
+          <div>
+            <h1>Больше проектов</h1>
+            <p>SmartJournal</p>
+          </div>
+          <div>
+            <h1>Повышение квалификации</h1>
+            <p>Курсы</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -340,5 +361,27 @@ export default {
     }
   }
 
+  .what-we-do__future-block {
+    .future-block{
+
+      background-color: #D7E6FC;
+      padding: 40px;
+      border-radius: 20px;
+      .future-block__title{
+        font-family: 'Montserrat', sans-serif;
+        color: #434244;
+        font-size: 40px;
+      }
+      .future-block__text{
+        justify-content: space-around;
+        margin-top: 60px;
+        display: flex;
+        gap: 10px;
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 </style>
