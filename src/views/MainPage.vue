@@ -302,6 +302,7 @@ export default {
       align-items: flex-end;
       justify-content: center;
       flex-direction: row;
+      cursor: pointer;
     }
     display: flex;
     flex-direction: row;
@@ -363,22 +364,26 @@ export default {
 
   .what-we-do__future-block {
     .future-block{
-
+      margin-top: 15vh;
       background-color: #D7E6FC;
-      padding: 40px;
+      padding: 40px 80px 80px 80px;
       border-radius: 20px;
       .future-block__title{
         font-family: 'Montserrat', sans-serif;
         color: #434244;
-        font-size: 40px;
+        font-size: 68px;
       }
       .future-block__text{
         justify-content: space-around;
-        margin-top: 60px;
+        margin-top: 30px;
         display: flex;
         gap: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
         h1 {
-          font-size: 20px;
+          text-align: center;
+          font-size: 48px;
         }
       }
     }
