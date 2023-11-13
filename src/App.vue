@@ -9,5 +9,8 @@
 html, body{
   margin: 0;
   padding: 0;
+  width: auto;
+  display: flex;
+
 }
 </style>

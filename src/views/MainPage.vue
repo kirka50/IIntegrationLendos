@@ -96,8 +96,8 @@
         </div>
         <div class="block__under-list">
           <ul>
-            <li>Что сюда впендюрить</li>
-            <li>Спросить у Кирилла</li>
+            <li>Что сюда </li>
+            <li>Спросить Кирю</li>
           </ul>
         </div>
       </div>
@@ -141,7 +141,7 @@ export default {
 @mixin borders {
   padding-left: 10%;
   padding-right: 10%;
-  min-width: 1280px;
+
 }
 
 .team-title {
@@ -150,7 +150,6 @@ export default {
   justify-content: center;
 
   .team-title__team-image {
-    min-width: 1280px;
 
     .team-image__img {
       position: relative;
@@ -293,11 +292,12 @@ export default {
 
   .what-we-do__blocks {
     margin-top: 15vh;
+
     @mixin block-page() {
       background-color: #38465B;
       display: flex;
-      width: 384px;
-      height: 374px;
+      width: 45vh;
+      height: 40vh;
       border-radius: 30px;
       align-items: flex-end;
       justify-content: center;
@@ -307,6 +307,8 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    justify-items: center;
+    gap: 1vh;
 
     .blocks__hacks {
 
@@ -358,7 +360,12 @@ export default {
       align-items: flex-start;
       color: #434244;
       font-family: 'Montserrat', sans-serif;
-      font-size: 32px;
+      font-size: 120%;
+      ul {
+        padding-left: 1em;
+        li{
+        }
+      }
     }
   }
 
