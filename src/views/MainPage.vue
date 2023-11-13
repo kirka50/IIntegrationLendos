@@ -124,6 +124,9 @@
       </div>
     </div>
   </div>
+  <div class="our-history">
+    1
+  </div>
 </template>
 
 <script>
@@ -141,7 +144,7 @@ export default {
 @mixin borders {
   padding-left: 10%;
   padding-right: 10%;
-
+  min-width: 900px;
 }
 
 .team-title {
@@ -371,6 +374,7 @@ export default {
 
   .what-we-do__future-block {
     .future-block{
+
       margin-top: 15vh;
       background-color: #D7E6FC;
       padding: 40px 80px 80px 80px;
@@ -382,6 +386,7 @@ export default {
       }
       .future-block__text{
         justify-content: space-around;
+        align-items: start;
         margin-top: 30px;
         display: flex;
         gap: 10px;
@@ -390,10 +395,17 @@ export default {
         font-family: 'Montserrat', sans-serif;
         h1 {
           text-align: center;
-          font-size: 48px;
+          font-size: 140%;
         }
       }
     }
   }
+}
+.our-history{
+  @include borders;
+  background-color: #38465B;
+  margin-top: 10vh;
+  border-radius: 20px;
+  border: solid 20px #38465B;
 }
 </style>
