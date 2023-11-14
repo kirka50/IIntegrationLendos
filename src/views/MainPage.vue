@@ -125,16 +125,57 @@
     </div>
   </div>
   <div class="our-history">
-    1
+    <h1>
+      Наша история
+    </h1>
+    <div class="our-history__timeline">
+      <div class="timeline__block--left">
+        <div class="timeline__block">
+          <div class="block--left__title">
+            Робототехники
+            <img src="@/assets/more-ico.svg" alt="a" @click="this.showModal = !showModal">
+            <modal-window v-show="showModal" @closeModal="closeModal">asdadas</modal-window>
+          </div>
+          <div class="block--left__content">
+            <img src="/teamHackEkb.png" alt="крутое фото">
+            <img src="/teamHackEkb.png" alt="крутое фото">
+            <img src="/teamHackEkb.png" alt="крутое фото">
+          </div>
+        </div>
+      </div>
+      <div class="timeline__block--right">
+        <div class="timeline__block">
+          <div class="block--right__title">
+            Робототехники
+            <img src="@/assets/more-ico.svg" alt="a" @click="this.showModal = !showModal">
+            <modal-window v-show="showModal" @closeModal="closeModal">ffffffff</modal-window>
+          </div>
+          <div class="block--right__content">
+            <img src="/teamHackEkb.png" alt="крутое фото">
+            <img src="/teamHackEkb.png" alt="крутое фото">
+            <img src="/teamHackEkb.png" alt="крутое фото">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import ModalWindow from "@/components/modalWindow";
 export default {
   name: "MainPage",
+  components: {ModalWindow},
   data() {
-    return {}
+    return {
+      showModal: false
+    }
   },
+  methods: {
+    closeModal() {
+      this.showModal = false
+    }
+  }
 }
 </script>
 
@@ -407,5 +448,58 @@ export default {
   margin-top: 10vh;
   border-radius: 20px;
   border: solid 20px #38465B;
+  h1{
+    color: #FCFEFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+  }
+  .our-history__timeline{
+    @mixin block-title-set{
+      color: #434244;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      display: flex;
+      justify-content: space-between;
+    }
+    @mixin block-content-set{
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+      img {
+        height: 150px;
+        width: 150px;
+        border-radius: 30px;
+      }
+
+    }
+    margin-top: 20vh;
+    width: 100%;
+    .timeline__block{
+      background-color: #6293D9;
+      border-radius: 30px;
+      padding: 10px 20px 20px 20px;
+    }
+    .timeline__block--left{
+      display: flex;
+      justify-content: flex-start;
+      .block--left__title{
+        @include block-title-set
+      }
+      .block--left__content{
+        @include block-content-set
+      }
+    }
+    .timeline__block--right{
+      display: flex;
+      justify-content: flex-end;
+      .block--right__title {
+        @include block-title-set
+      }
+      .block--right__content {
+        @include block-content-set
+      }
+    }
+  }
 }
 </style>
