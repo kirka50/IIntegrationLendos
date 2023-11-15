@@ -133,8 +133,12 @@
         <div class="timeline__block">
           <div class="block--left__title">
             Робототехники
-            <img src="@/assets/more-ico.svg" alt="a" @click="this.showModal = !showModal">
-            <modal-window v-show="showModal" @closeModal="closeModal">asdadas</modal-window>
+            <modal-button>
+              Я пиздатый
+              <template #button-ico>
+                <img src="@/assets/more-ico.svg" alt="a">
+              </template>
+            </modal-button>
           </div>
           <div class="block--left__content">
             <img src="/teamHackEkb.png" alt="крутое фото">
@@ -147,8 +151,12 @@
         <div class="timeline__block">
           <div class="block--right__title">
             Робототехники
-            <img src="@/assets/more-ico.svg" alt="a" @click="this.showModal = !showModal">
-            <modal-window v-show="showModal" @closeModal="closeModal">ffffffff</modal-window>
+            <modal-button>
+                Я крутой
+              <template #button-ico>
+                <img src="@/assets/more-ico.svg" alt="a">
+              </template>
+            </modal-button>
           </div>
           <div class="block--right__content">
             <img src="/teamHackEkb.png" alt="крутое фото">
@@ -162,13 +170,14 @@
 </template>
 
 <script>
-import ModalWindow from "@/components/modalWindow";
+
+import ModalButton from "@/components/modal-button";
 export default {
   name: "MainPage",
-  components: {ModalWindow},
+  components: {ModalButton,},
   data() {
     return {
-      showModal: false
+
     }
   },
   methods: {

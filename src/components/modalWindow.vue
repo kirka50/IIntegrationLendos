@@ -3,7 +3,7 @@
        @wheel.prevent
        @touchmove.prevent
        @scroll.prevent
-       @click="this.$emit('closeModal')">
+       >
     <div class="modal">
       <slot></slot>
     </div>
@@ -37,6 +37,8 @@ export default {
       width: 90%;
       padding: 60px 0;
       border-radius: 20px;
+      color: #FCFEFF;
+      font-family: 'Montserrat', sans-serif;
     }
     .modal__close{
       margin: 2vh 0 0 16px;
