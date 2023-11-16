@@ -134,9 +134,11 @@
           <div class="block--left__title">
             Робототехники
             <modal-button>
-              Я пиздатый
+              <div class="timeline__block__modal">
+                Я пиздатый
+              </div>
               <template #button-ico>
-                <img src="@/assets/more-ico.svg" alt="a">
+                <img src="@/assets/more-ico.svg" alt="a" class="modal__button-icon">
               </template>
             </modal-button>
           </div>
@@ -152,9 +154,14 @@
           <div class="block--right__title">
             Робототехники
             <modal-button>
+              <div class="timeline__block__modal">
+                Дарова
+              </div>
                 Я крутой
               <template #button-ico>
-                <img src="@/assets/more-ico.svg" alt="a">
+                <div >
+                  <img src="@/assets/more-ico.svg" alt="a" class="modal__button-icon">
+                </div>
               </template>
             </modal-button>
           </div>
@@ -174,7 +181,7 @@
 import ModalButton from "@/components/modal-button";
 export default {
   name: "MainPage",
-  components: {ModalButton,},
+  components: {ModalButton},
   data() {
     return {
 
@@ -488,6 +495,18 @@ export default {
       background-color: #6293D9;
       border-radius: 30px;
       padding: 10px 20px 20px 20px;
+      .modal__button-icon{
+        cursor: pointer;
+      }
+
+      .timeline__block__modal {
+        color: #FCFEFF;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding: 40px 20px;
+      }
     }
     .timeline__block--left{
       display: flex;
