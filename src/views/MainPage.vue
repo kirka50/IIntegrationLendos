@@ -134,9 +134,11 @@
           <div class="block--left__title">
             Робототехники
             <modal-button>
-              Я пиздатый
+              <div class="timeline__block__modal">
+                Я пиздатый
+              </div>
               <template #button-ico>
-                <img src="@/assets/more-ico.svg" alt="a">
+                <img src="@/assets/more-ico.svg" alt="a" class="modal__button-icon">
               </template>
             </modal-button>
           </div>
@@ -152,9 +154,14 @@
           <div class="block--right__title">
             Робототехники
             <modal-button>
+              <div class="timeline__block__modal">
+                Дарова
+              </div>
                 Я крутой
               <template #button-ico>
-                <img src="@/assets/more-ico.svg" alt="a">
+                <div >
+                  <img src="@/assets/more-ico.svg" alt="a" class="modal__button-icon">
+                </div>
               </template>
             </modal-button>
           </div>
@@ -167,6 +174,43 @@
       </div>
     </div>
   </div>
+  <div class="hr">
+    Блок с hr
+    <div class="hr__blocks">
+      <div class="hr__block">
+        <div class="hr__block__content">
+          <div class="content__img">
+            <img src="/kirill.png">
+          </div>
+          <div class="content__text">
+            <h1>
+              Ебейший фронт
+            </h1>
+            <p>
+              Это фронт и это пиздато вооьще самый клёвый челик хуй пойми что длеать если честно бумерское это всё но
+              зато я почти допилил сайт осталось только допилить что то крутое и профиля типо страницы типо <br>
+              Пиздатый челик
+            </p>
+          </div>
+        </div>
+        <div class="hr__block__button">
+          <img src="@/assets/next-ico.svg">
+        </div>
+      </div>
+      <div class="hr__block">
+        тимлид
+      </div>
+      <div class="hr__block">
+        мл диса
+      </div>
+      <div class="hr__block">
+        мл ярик
+      </div>
+      <div class="hr__block">
+        некич
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -174,7 +218,7 @@
 import ModalButton from "@/components/modal-button";
 export default {
   name: "MainPage",
-  components: {ModalButton,},
+  components: {ModalButton},
   data() {
     return {
 
@@ -228,7 +272,6 @@ export default {
     }
   }
 }
-
 .whois {
   @include borders;
   font-weight: bold;
@@ -322,7 +365,6 @@ export default {
     }
   }
 }
-
 .what-we-do {
   @mixin block-pos {
     display: flex;
@@ -451,7 +493,7 @@ export default {
     }
   }
 }
-.our-history{
+.our-history {
   @include borders;
   background-color: #38465B;
   margin-top: 10vh;
@@ -488,6 +530,18 @@ export default {
       background-color: #6293D9;
       border-radius: 30px;
       padding: 10px 20px 20px 20px;
+      .modal__button-icon{
+        cursor: pointer;
+      }
+
+      .timeline__block__modal {
+        color: #FCFEFF;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding: 40px 20px;
+      }
     }
     .timeline__block--left{
       display: flex;
@@ -507,6 +561,54 @@ export default {
       }
       .block--right__content {
         @include block-content-set
+      }
+    }
+  }
+}
+.hr {
+  @include borders;
+  .hr__blocks {
+    color: #FCFEFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    .hr__block {
+      min-width: 80%;
+      padding: 10px;
+      background-color: #38465B;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .hr__block__content {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        .content__img {
+          img {
+            height: 400px;
+            width: auto;
+            margin-right: 20px;
+          }
+        }
+        .content__text {
+          h1 {
+            font-weight: 700;
+          }
+          p {
+            font-weight: 300;
+          }
+        }
+      }
+      .hr__block__button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        img {
+          height: 20%;
+          width: auto;
+          cursor: pointer;
+        }
       }
     }
   }

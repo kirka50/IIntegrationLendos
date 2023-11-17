@@ -30,15 +30,11 @@ export default {
     justify-content: center;
     background: rgba(0,0,0,0.2);
     .modal{
-      text-align: center;
       background-color: #38465B;
       margin-top: 2vh;
-      height: 80%;
+      height: 85%;
       width: 90%;
-      padding: 60px 0;
       border-radius: 20px;
-      color: #FCFEFF;
-      font-family: 'Montserrat', sans-serif;
     }
     .modal__close{
       margin: 2vh 0 0 16px;
