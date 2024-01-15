@@ -15,7 +15,7 @@
     </h1>
     <div class="whois__text-block">
       <div class="text-block__graphics">
-        Графика
+        <img src="@/assets/Ai+.svg">
       </div>
       <div class="text-block__text">
         <h2>
@@ -45,10 +45,9 @@
           <p>Затем пошли разные соревнования и хакатоны</p>
         </div>
 
-
       </div>
       <div class="about-us__image">
-        <img src="/teamHackEkb.png" alt="Наша крутая картинка">
+        <img src="/cool.jpg" alt="Наша крутая картинка">
       </div>
     </div>
   </div>
@@ -59,7 +58,7 @@
     <div class="what-we-do__blocks">
       <div class="blocks__hacks">
         <div class="blocks__hacks__page">
-          <img src="/teamHackEkb.png" class="page__img">
+          <img src="/widndow_seat.jpg" class="page__img">
           <div class="page__title">
             Хакатоны
           </div>
@@ -75,7 +74,7 @@
       </div>
       <div class="blocks__projects">
         <div class="blocks__projects__page">
-          <img src="/teamHackEkb.png" class="page__img">
+          <img src="/tower.jpg" class="page__img">
           <div class="page__title">
             Проекты
           </div>
@@ -89,7 +88,7 @@
       </div>
       <div class="blocks__other">
         <div class="blocks__other__page">
-          <img src="/teamHackEkb.png" class="page__img">
+          <img src="/nikita_look.jpg" class="page__img">
           <div class="page__title">
             Прочее
           </div>
@@ -124,14 +123,14 @@
       </div>
     </div>
   </div>
-  <div class="our-history">
+<!--  <div class="our-history">
     <h1>
       Наша история
     </h1>
     <div class="our-history__timeline">
-      <div class="timeline__block--left">
+      <div class="timeline__block&#45;&#45;left">
         <div class="timeline__block">
-          <div class="block--left__title">
+          <div class="block&#45;&#45;left__title">
             Робототехники
             <modal-button>
               <div class="timeline__block__modal">
@@ -142,16 +141,16 @@
               </template>
             </modal-button>
           </div>
-          <div class="block--left__content">
+          <div class="block&#45;&#45;left__content">
             <img src="/teamHackEkb.png" alt="крутое фото">
             <img src="/teamHackEkb.png" alt="крутое фото">
             <img src="/teamHackEkb.png" alt="крутое фото">
           </div>
         </div>
       </div>
-      <div class="timeline__block--right">
+      <div class="timeline__block&#45;&#45;right">
         <div class="timeline__block">
-          <div class="block--right__title">
+          <div class="block&#45;&#45;right__title">
             Робототехники
             <modal-button>
               <div class="timeline__block__modal">
@@ -165,7 +164,7 @@
               </template>
             </modal-button>
           </div>
-          <div class="block--right__content">
+          <div class="block&#45;&#45;right__content">
             <img src="/teamHackEkb.png" alt="крутое фото">
             <img src="/teamHackEkb.png" alt="крутое фото">
             <img src="/teamHackEkb.png" alt="крутое фото">
@@ -173,10 +172,36 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
   <div class="hr">
-    Блок с hr
     <div class="hr__blocks">
+      <div class="hr__block">
+        <div class="hr__block__content">
+          <div class="content__img">
+            <img src="/kirillR.jpg">
+          </div>
+          <div class="content__text">
+            <h1>
+              Фронтендер
+            </h1>
+            <h3>
+              Резников Кирилл
+            </h3>
+            <p>
+              Наш специалист в области фронтенда, сопровождает все наши проекты поектируя и создавая веб\десктоп интерфейсы для наших продуктов
+            </p>
+            <p>
+              Знаком с Vue, React. Понимает как устроена веб разработка и как необходимо работать с ней для достижения максимально хорошего результата
+            </p>
+          </div>
+        </div>
+        <div class="hr__block__button">
+          <a href="">
+            <img src="@/assets/next-ico.svg">
+            <img src="/hh.png" style="height: 50px">
+          </a>
+        </div>
+      </div>
       <div class="hr__block">
         <div class="hr__block__content">
           <div class="content__img">
@@ -184,30 +209,101 @@
           </div>
           <div class="content__text">
             <h1>
-              Ебейший фронт
+              Тимлид
             </h1>
+            <h3>
+              Брагин Кирилл
+            </h3>
             <p>
-              Это фронт и это пиздато вооьще самый клёвый челик хуй пойми что длеать если честно бумерское это всё но
-              зато я почти допилил сайт осталось только допилить что то крутое и профиля типо страницы типо <br>
-              Пиздатый челик
+              Двигатель и голова ИИнтеграции. Собирает и организовывает всю команду вместе
+            </p>
+            <p>
+              Решает проблемы сплочённости и собраности команды, своим управленчиским стремлением увеличивает и сохраняет эффективность труда всей команды
             </p>
           </div>
         </div>
         <div class="hr__block__button">
-          <img src="@/assets/next-ico.svg">
+          <a  href="https://ekaterinburg.hh.ru/applicant/resumes/view?resume=ec8946cbff0b3e80b30039ed1f7449396c3850">
+            <img src="@/assets/next-ico.svg">
+            <img src="/hh.png" style="height: 50px">
+          </a>
+
         </div>
       </div>
       <div class="hr__block">
-        тимлид
+        <div class="hr__block__content">
+          <div class="content__img">
+            <img src="/Nikita.png">
+          </div>
+          <div class="content__text">
+            <h1>
+              Бэкенд
+            </h1>
+            <h3>
+              Габбасов Никита
+            </h3>
+            <p>
+              Разработчик серверной и функциональной частей всех наших проектов
+            </p>
+            <p>
+              Разбрирается как быстро и эффективно обрабатывать запросы на сервера. Помогает отладить и оптимизировать код независимо от профиля разработки
+            </p>
+          </div>
+        </div>
+        <div class="hr__block__button">
+          <a   href="/nikitaHH.pdf"
+               target="_blank">
+            <img src="@/assets/next-ico.svg">
+            <img src="/hh.png" style="height: 50px">
+          </a>
+        </div>
       </div>
       <div class="hr__block">
-        мл диса
+        <div class="hr__block__content">
+          <div class="content__img">
+            <img src="/Yarik.jpg">
+          </div>
+          <div class="content__text">
+            <h1>
+              Ml инженер
+            </h1>
+            <h3>
+              Колташев Ярослав
+            </h3>
+            <p>
+              Ai разработчик. Занимается созданием решений для бизнеса с применением моделей машинного обучения в направлениях NLP CV
+            </p>
+          </div>
+        </div>
+        <div class="hr__block__button">
+          <a href="https://fallacious-ladybug-6fa.notion.site/f7281fbe72d643b5825a3a7ca919bd77">
+            <img src="@/assets/next-ico.svg">
+          </a>
+        </div>
       </div>
       <div class="hr__block">
-        мл ярик
-      </div>
-      <div class="hr__block">
-        некич
+        <div class="hr__block__content">
+          <div class="content__img">
+            <img src="/Denis.jpg">
+          </div>
+          <div class="content__text">
+            <h1>
+              Data Science
+            </h1>
+            <h3>
+              Агапитов Денис
+            </h3>
+            <p>
+              Ai разработчик. Занимается анализом данных и работой с Big Data
+            </p>
+          </div>
+        </div>
+        <div class="hr__block__button">
+          <a href="https://ekaterinburg.hh.ru/resume/453258c0ff0908c4f40039ed1f64486d76656f">
+            <img src="@/assets/next-ico.svg">
+            <img src="/hh.png" style="height: 50px">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -216,8 +312,10 @@
 <script>
 
 import ModalButton from "@/components/modal-button";
+import axios from "axios";
 export default {
   name: "MainPage",
+  // eslint-disable-next-line vue/no-unused-components
   components: {ModalButton},
   data() {
     return {
@@ -227,6 +325,17 @@ export default {
   methods: {
     closeModal() {
       this.showModal = false
+    },
+    downloadItem ({ url, label }) {
+      axios.get(url, { responseType: 'blob' })
+          .then(response => {
+            const blob = new Blob([response.data], { type: 'application/pdf'})
+            const link = document.createElement('a')
+            link.href = URL.createObjectURL(blob)
+            link.download = label
+            link.click()
+            URL.revokeObjectURL(link.href)
+          }).catch(console.error)
     }
   }
 }
@@ -295,10 +404,14 @@ export default {
     gap: 10%;
 
     .text-block__graphics {
-      background-color: gray;
+      display: flex;
+      justify-content: center;
       height: 500px;
-      min-width: 200px;
+      min-width: 300px;
       border-radius: 20px;
+      img {
+        height: 100%;
+      }
     }
 
     .text-block__text {
@@ -377,6 +490,7 @@ export default {
   border: solid 20px #FCFEFF;
   color: #434244;
   padding-top: 50px;
+  padding-bottom: 7vh;
 
   h1 {
     padding: 0;
@@ -397,7 +511,6 @@ export default {
       align-items: flex-end;
       justify-content: center;
       flex-direction: row;
-      cursor: pointer;
     }
     display: flex;
     flex-direction: row;
@@ -435,11 +548,11 @@ export default {
         @include block-page();
       }
     }
-
     .page__img {
-      width: 100%;
+      width: auto;
       height: 100%;
       position: relative;
+      border-radius: 20px;
     }
 
     .page__title {
@@ -499,6 +612,7 @@ export default {
   margin-top: 10vh;
   border-radius: 20px;
   border: solid 20px #38465B;
+  padding-bottom: 20vh;
   h1{
     color: #FCFEFF;
     font-family: 'Montserrat', sans-serif;
@@ -506,6 +620,9 @@ export default {
     font-weight: 300;
   }
   .our-history__timeline{
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
     @mixin block-title-set{
       color: #434244;
       font-family: 'Montserrat', sans-serif;
@@ -567,25 +684,37 @@ export default {
 }
 .hr {
   @include borders;
+  border-top: solid 6vh #FCFEFF;
+  margin-top: -5vh;
+  border-radius: 20px;
   .hr__blocks {
+    padding-top: 10vh;
     color: #FCFEFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5vh;
     .hr__block {
-      min-width: 80%;
+      min-width: 100%;
       padding: 10px;
       background-color: #38465B;
       border-radius: 30px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+    p {
+      margin-bottom: 5px;
+      text-align: justify;
+    }
       .hr__block__content {
         display: flex;
         font-family: 'Montserrat', sans-serif;
+        padding: 1% 8%;
+        min-width: 80%;
+        font-size: 26px;
         .content__img {
           img {
+            border-radius: 20px;
             height: 400px;
             width: auto;
             margin-right: 20px;
@@ -604,11 +733,12 @@ export default {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        img {
+        img{
           height: 20%;
           width: auto;
           cursor: pointer;
         }
+
       }
     }
   }

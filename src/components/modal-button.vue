@@ -6,7 +6,6 @@
     </modal-window>
     <div @click="this.openModal = true">
       <slot name="button-ico">
-
       </slot>
     </div>
   </div>
