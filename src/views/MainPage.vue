@@ -2,7 +2,7 @@
   <div class="team-title">
     <div class="team-title__team-image">
       <div class="team-image__img">
-        <img src="/teamHackEkb.png" alt="asd">
+        <img src="teamHackEkb.png" alt="asd">
         <div class="img__ico">
           <img src="@/assets/teamround.svg" alt="asd">
         </div>
@@ -47,7 +47,7 @@
 
       </div>
       <div class="about-us__image">
-        <img src="/cool.jpg" alt="Наша крутая картинка">
+        <img src="cool.jpg" alt="Наша крутая картинка">
       </div>
     </div>
   </div>
@@ -58,7 +58,7 @@
     <div class="what-we-do__blocks">
       <div class="blocks__hacks">
         <div class="blocks__hacks__page">
-          <img src="/widndow_seat.jpg" class="page__img">
+          <img src="widndow_seat.jpg" class="page__img">
           <div class="page__title">
             Хакатоны
           </div>
@@ -74,7 +74,7 @@
       </div>
       <div class="blocks__projects">
         <div class="blocks__projects__page">
-          <img src="/tower.jpg" class="page__img">
+          <img src="tower.jpg" class="page__img">
           <div class="page__title">
             Проекты
           </div>
@@ -88,15 +88,14 @@
       </div>
       <div class="blocks__other">
         <div class="blocks__other__page">
-          <img src="/nikita_look.jpg" class="page__img">
+          <img src="nikita_look.jpg" class="page__img">
           <div class="page__title">
             Прочее
           </div>
         </div>
         <div class="block__under-list">
           <ul>
-            <li>Что сюда </li>
-            <li>Спросить Кирю</li>
+            <li>Вайб</li>
           </ul>
         </div>
       </div>
@@ -178,7 +177,7 @@
       <div class="hr__block">
         <div class="hr__block__content">
           <div class="content__img">
-            <img src="/kirillR.jpg">
+            <img src="kirillR.jpg">
           </div>
           <div class="content__text">
             <h1>
@@ -196,16 +195,17 @@
           </div>
         </div>
         <div class="hr__block__button">
-          <a href="">
+          <a href="ReznikovKirill.pdf"
+          target="_blank">
             <img src="@/assets/next-ico.svg">
-            <img src="/hh.png" style="height: 50px">
+            <img src="hh.png" style="height: 50px">
           </a>
         </div>
       </div>
       <div class="hr__block">
         <div class="hr__block__content">
           <div class="content__img">
-            <img src="/kirill.png">
+            <img src="kirill.png">
           </div>
           <div class="content__text">
             <h1>
@@ -225,7 +225,7 @@
         <div class="hr__block__button">
           <a  href="https://ekaterinburg.hh.ru/applicant/resumes/view?resume=ec8946cbff0b3e80b30039ed1f7449396c3850">
             <img src="@/assets/next-ico.svg">
-            <img src="/hh.png" style="height: 50px">
+            <img src="hh.png" style="height: 50px">
           </a>
 
         </div>
@@ -233,7 +233,7 @@
       <div class="hr__block">
         <div class="hr__block__content">
           <div class="content__img">
-            <img src="/Nikita.png">
+            <img src="Nikita.png">
           </div>
           <div class="content__text">
             <h1>
@@ -251,17 +251,17 @@
           </div>
         </div>
         <div class="hr__block__button">
-          <a   href="/nikitaHH.pdf"
+          <a   href="nikitaHH.pdf"
                target="_blank">
             <img src="@/assets/next-ico.svg">
-            <img src="/hh.png" style="height: 50px">
+            <img src="hh.png" style="height: 50px">
           </a>
         </div>
       </div>
       <div class="hr__block">
         <div class="hr__block__content">
           <div class="content__img">
-            <img src="/Yarik.jpg">
+            <img src="Yarik.jpg">
           </div>
           <div class="content__text">
             <h1>
@@ -278,13 +278,14 @@
         <div class="hr__block__button">
           <a href="https://fallacious-ladybug-6fa.notion.site/f7281fbe72d643b5825a3a7ca919bd77">
             <img src="@/assets/next-ico.svg">
+            <img src="@/assets/Notion_app_logo.png" style="height: 50px">
           </a>
         </div>
       </div>
       <div class="hr__block">
         <div class="hr__block__content">
           <div class="content__img">
-            <img src="/Denis.jpg">
+            <img src="Denis.jpg">
           </div>
           <div class="content__text">
             <h1>
@@ -301,7 +302,7 @@
         <div class="hr__block__button">
           <a href="https://ekaterinburg.hh.ru/resume/453258c0ff0908c4f40039ed1f64486d76656f">
             <img src="@/assets/next-ico.svg">
-            <img src="/hh.png" style="height: 50px">
+            <img src="hh.png" style="height: 50px">
           </a>
         </div>
       </div>
@@ -368,6 +369,7 @@ export default {
       .img__ico {
         position: absolute;
         display: flex;
+        justify-content: center;
         justify-content: center;
         top: 80%;
         left: 0;
